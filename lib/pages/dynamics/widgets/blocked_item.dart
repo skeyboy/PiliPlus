@@ -1,4 +1,4 @@
-import 'package:PiliPlus/models/dynamics/result.dart' show ModuleBlocked;
+import 'package:models/models/dynamics/result.dart' show ModuleBlocked;
 import 'package:PiliPlus/pages/article/widgets/opus_content.dart'
     show moduleBlockedItem;
 import 'package:material_ui/material_ui.dart';

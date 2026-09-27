@@ -11,7 +11,9 @@ include: package:flutter_lints/flutter.yaml
 
 analyzer:
   exclude:
-    - lib/grpc/bilibili/**
+    # workspace 成员包各有自己的 analysis_options.yaml，逐包 analyze 即可，
+    # 根包只分析自己（lib/**）。否则重复分析且成员包的问题会被重复计数。
+    - packages/**
     - lib/**/*.g.dart
     - android/**
     - ios/**

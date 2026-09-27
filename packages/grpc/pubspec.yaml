@@ -1,0 +1,12 @@
+name: grpc
+resolution: workspace
+description: B 站 bilibili grpc/protobuf 生成代码（协议栈与 grpc 路径常量）。
+publish_to: none
+version: 0.1.0
+environment:
+  sdk: ">=3.13.0"
+
+# 版本策略集中在根 pubspec.yaml 的 dependency_overrides，成员包一律写 any。
+dependencies:
+  fixnum: any
+  protobuf: any

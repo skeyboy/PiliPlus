@@ -1,9 +1,9 @@
 import 'package:PiliPlus/common/widgets/badge.dart';
 import 'package:PiliPlus/common/widgets/image/image_save.dart';
 import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/models/search/result.dart';
+import 'package:models/models/search/result.dart';
 import 'package:PiliPlus/utils/app_scheme.dart';
-import 'package:PiliPlus/utils/platform_utils.dart';
+import 'package:core/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class SearchActivityItem extends StatelessWidget {

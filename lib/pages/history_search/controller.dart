@@ -1,11 +1,11 @@
 import 'package:PiliPlus/common/widgets/dialog/dialog.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/user.dart';
-import 'package:PiliPlus/models_new/history/data.dart';
-import 'package:PiliPlus/models_new/history/list.dart';
-import 'package:PiliPlus/pages/common/multi_select/base.dart';
+import 'package:core/loading_state.dart';
+import 'package:api/http/user.dart';
+import 'package:models/models_new/history/data.dart';
+import 'package:models/models_new/history/list.dart';
+import 'package:core/controller/multi_select/base.dart';
 import 'package:PiliPlus/pages/common/search/common_search_controller.dart';
-import 'package:PiliPlus/utils/accounts.dart';
+import 'package:api/utils/accounts.dart';
 import 'package:flutter/widgets.dart' show Text;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

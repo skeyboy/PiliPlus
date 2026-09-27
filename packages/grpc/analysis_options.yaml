@@ -1,0 +1,8 @@
+# 本包全部是 protobuf 生成代码，lint 对它没有意义且会刷出成千上万条告警，
+# 因此只继承根配置的语言/格式化约定，把生成文件整体排除。
+include: ../../analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/bilibili/**
+    - lib/**/*.g.dart

@@ -1,15 +1,15 @@
-import 'package:PiliPlus/models/common/fav_order_type.dart';
-import 'package:PiliPlus/models_new/fav/fav_detail/data.dart';
-import 'package:PiliPlus/models_new/fav/fav_detail/media.dart';
+import 'package:models/models/common/fav_order_type.dart';
+import 'package:models/models_new/fav/fav_detail/data.dart';
+import 'package:models/models_new/fav/fav_detail/media.dart';
 import 'package:PiliPlus/pages/common/search/common_search_page.dart';
 import 'package:PiliPlus/pages/fav_detail/widget/fav_video_card.dart';
 import 'package:PiliPlus/pages/fav_search/controller.dart';
-import 'package:PiliPlus/utils/accounts.dart';
+import 'package:api/utils/accounts.dart';
 import 'package:PiliPlus/utils/grid.dart';
-import 'package:PiliPlus/utils/request_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:core/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
+import 'package:PiliPlus/utils/request_utils.dart';
 
 class FavSearchPage extends StatefulWidget {
   const FavSearchPage({super.key});

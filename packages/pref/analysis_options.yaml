@@ -1,0 +1,6 @@
+# 继承根配置；本包无生成文件，仅保留 *.g.dart 的排除规则以备后续下沉。
+include: ../../analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/**/*.g.dart

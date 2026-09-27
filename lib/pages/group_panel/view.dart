@@ -1,14 +1,14 @@
 import 'package:PiliPlus/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/member.dart';
-import 'package:PiliPlus/models/member/tags.dart';
-import 'package:PiliPlus/utils/extension/iterable_ext.dart';
-import 'package:PiliPlus/utils/extension/num_ext.dart';
-import 'package:PiliPlus/utils/feed_back.dart';
-import 'package:PiliPlus/utils/request_utils.dart';
+import 'package:core/loading_state.dart';
+import 'package:api/http/member.dart';
+import 'package:models/models/member/tags.dart';
+import 'package:core/extension/iterable_ext.dart';
+import 'package:core/extension/num_ext.dart';
+import 'package:pref/feed_back.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
+import 'package:PiliPlus/utils/request_utils.dart';
 
 class GroupPanel extends StatefulWidget {
   final int mid;

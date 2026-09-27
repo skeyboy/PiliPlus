@@ -3,11 +3,11 @@ import 'package:PiliPlus/common/widgets/badge.dart';
 import 'package:PiliPlus/common/widgets/button/icon_button.dart';
 import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
 import 'package:PiliPlus/common/widgets/select_mask.dart';
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/models_new/fav/fav_pgc/list.dart';
-import 'package:PiliPlus/pages/common/multi_select/base.dart';
+import 'package:models/models/common/badge_type.dart';
+import 'package:models/models_new/fav/fav_pgc/list.dart';
+import 'package:core/controller/multi_select/base.dart';
 import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/platform_utils.dart';
+import 'package:core/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class FavPgcItem extends StatelessWidget {

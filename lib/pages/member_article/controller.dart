@@ -1,8 +1,8 @@
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/member.dart';
-import 'package:PiliPlus/models_new/space/space_article/data.dart';
-import 'package:PiliPlus/models_new/space/space_article/item.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
+import 'package:core/loading_state.dart';
+import 'package:api/http/member.dart';
+import 'package:models/models_new/space/space_article/data.dart';
+import 'package:models/models_new/space/space_article/item.dart';
+import 'package:core/controller/common_list_controller.dart';
 
 class MemberArticleCtr
     extends CommonListController<SpaceArticleData, SpaceArticleItem> {

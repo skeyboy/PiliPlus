@@ -1,5 +1,6 @@
 import 'package:PiliPlus/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPlus/models/common/setting_type.dart';
+import 'package:PiliPlus/ext/models_page_ext.dart';
+import 'package:models/models/common/setting_type.dart';
 import 'package:PiliPlus/pages/setting/models/model.dart';
 import 'package:material_ui/material_ui.dart';
 

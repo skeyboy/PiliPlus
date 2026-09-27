@@ -3,9 +3,9 @@ import 'package:PiliPlus/common/style.dart';
 import 'package:PiliPlus/common/widgets/badge.dart';
 import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
 import 'package:PiliPlus/common/widgets/svg/play_icon.dart';
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/models/dynamics/result.dart';
-import 'package:PiliPlus/utils/num_utils.dart';
+import 'package:models/models/common/badge_type.dart';
+import 'package:models/models/dynamics/result.dart';
+import 'package:core/num_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 Widget videoSeasonWidget(

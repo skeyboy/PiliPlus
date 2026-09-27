@@ -1,7 +1,7 @@
-import 'package:PiliPlus/http/dynamics.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models_new/dynamic/dyn_reserve_info/data.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:api/http/dynamics.dart';
+import 'package:core/loading_state.dart';
+import 'package:models/models_new/dynamic/dyn_reserve_info/data.dart';
+import 'package:core/utils.dart';
 import 'package:get/get.dart';
 
 class CreateReserveController extends GetxController {

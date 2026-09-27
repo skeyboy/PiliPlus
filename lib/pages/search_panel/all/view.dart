@@ -1,5 +1,5 @@
-import 'package:PiliPlus/models/search/result.dart';
-import 'package:PiliPlus/models/search/search_esports.dart';
+import 'package:models/models/search/result.dart';
+import 'package:models/models/search/search_esports.dart';
 import 'package:PiliPlus/pages/search_panel/all/controller.dart';
 import 'package:PiliPlus/pages/search_panel/all/widgets/activity.dart';
 import 'package:PiliPlus/pages/search_panel/all/widgets/esports.dart';

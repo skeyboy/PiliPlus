@@ -1,7 +1,7 @@
-import 'package:PiliPlus/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:grpc/bilibili/main/community/reply/v1.pb.dart'
     show MainListReply, ReplyInfo;
-import 'package:PiliPlus/grpc/reply.dart';
-import 'package:PiliPlus/http/loading_state.dart';
+import 'package:api/grpc/reply.dart';
+import 'package:core/loading_state.dart';
 import 'package:PiliPlus/pages/common/reply_controller.dart';
 import 'package:get/get.dart';
 

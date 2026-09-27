@@ -1,10 +1,10 @@
 import 'package:PiliPlus/common/widgets/pendant_avatar.dart';
-import 'package:PiliPlus/models_new/follow/list.dart';
+import 'package:models/models_new/follow/list.dart';
 import 'package:PiliPlus/pages/share/view.dart' show UserModel;
-import 'package:PiliPlus/utils/feed_back.dart';
-import 'package:PiliPlus/utils/request_utils.dart';
+import 'package:pref/feed_back.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
+import 'package:PiliPlus/utils/request_utils.dart';
 
 class FollowItem extends StatelessWidget {
   final FollowItemModel item;

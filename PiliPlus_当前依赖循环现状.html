@@ -1,0 +1,46 @@
+<svg width="100%" viewBox="0 0 680 330" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>lib 目录各层与 pages 之间的双向依赖</title>
+<desc>上层 pages 依赖下层的 3683 处引用为正常方向；下层反向引用 pages 的 82 处构成循环，是拆分 workspace 的阻断项。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<g>
+<rect x="40" y="50" width="145" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="112" y="70" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#0C447C">utils</text>
+<text x="112" y="88" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#185FA5">17k 行 · 56 文件</text>
+</g>
+<g>
+<rect x="195" y="50" width="145" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="267" y="70" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#0C447C">common</text>
+<text x="267" y="88" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#185FA5">48k 行 · 51 文件</text>
+</g>
+<g>
+<rect x="350" y="50" width="145" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="422" y="70" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#0C447C">models</text>
+<text x="422" y="88" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#185FA5">16k 行 · 含 models_new</text>
+</g>
+<g>
+<rect x="505" y="50" width="135" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="572" y="70" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#0C447C">player</text>
+<text x="572" y="88" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#185FA5">6k 行 · pl_player</text>
+</g>
+
+<path d="M280 112 L280 222" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="268" y="167" text-anchor="end" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#444441">正向依赖</text>
+<text x="268" y="185" text-anchor="end" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#888780">3683 处引用</text>
+
+<path d="M400 222 L400 112" fill="none" stroke="#A32D2D" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="412" y="167" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#791F1F">反向引用</text>
+<text x="412" y="185" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#A32D2D">82 处 · 构成循环</text>
+
+<g>
+<rect x="195" y="228" width="290" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="248" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">pages</text>
+<text x="340" y="266" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#5F5E5A">93k 行 · 88 个页面域</text>
+</g>
+
+<text x="40" y="310" font-family="system-ui,sans-serif" font-size="12" fill="#888780">另有 grpc ↔ http 循环 11 处、utils ↔ http 29 处、utils ↔ common 25 处</text>
+</svg>

@@ -7,12 +7,12 @@ import 'package:PiliPlus/common/widgets/loading_widget/http_error.dart';
 import 'package:PiliPlus/common/widgets/scaffold/simple_scaffold.dart';
 import 'package:PiliPlus/common/widgets/scroll_physics.dart'
     show tabBarScrollPhysics;
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models_new/history/list.dart';
+import 'package:core/loading_state.dart';
+import 'package:models/models_new/history/list.dart';
 import 'package:PiliPlus/pages/history/base_controller.dart';
 import 'package:PiliPlus/pages/history/controller.dart';
 import 'package:PiliPlus/pages/history/widgets/item.dart';
-import 'package:PiliPlus/utils/extension/scroll_controller_ext.dart';
+import 'package:core/extension/scroll_controller_ext.dart';
 import 'package:PiliPlus/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

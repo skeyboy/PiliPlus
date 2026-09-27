@@ -23,6 +23,16 @@ environment:
   sdk: ">=3.13.0"
   flutter: 3.47.5
 
+# Dart package workspace：成员包在 packages/ 下，版本策略集中在本文件的
+# dependency_overrides。新增成员后必须在根目录跑一次 `fvm flutter pub get`
+# （workspace 一次性解析全部包）。
+workspace:
+  - packages/grpc
+  - packages/core
+  - packages/models
+  - packages/pref
+  - packages/api
+
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
@@ -112,6 +122,16 @@ dependencies:
     git:
       url: https://github.com/bggRGjQaUbCoE/getx.git
       ref: dev
+  grpc:
+    path: packages/grpc
+  core:
+    path: packages/core
+  models:
+    path: packages/models
+  pref:
+    path: packages/pref
+  api:
+    path: packages/api
   hive_ce: ^2.19.3
   html: ^0.15.4
   http2: ^2.3.1
@@ -225,6 +245,76 @@ dependency_overrides:
       url: https://github.com/My-Responsitories/flutter_cached_network_image_ce.git
       path: cached_network_image
       ref: develop
+  # ↓↓↓ 以下是 workspace 成员包需要的 git 依赖。成员包一律写 `any`，
+  # 由这里统一钉死来源，否则 pub 会把成员包的 any 解析成 hosted 版，
+  # 与根包的 git 版本冲突（"depends on X from hosted ... from git"）。
+  audio_service:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/audio_service.git
+      path: audio_service
+      ref: dev
+  audio_session:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/audio_session.git
+      ref: dev
+  canvas_danmaku:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/canvas_danmaku.git
+      ref: main
+  catcher_2:
+    git:
+      url: https://github.com/My-Responsitories/catcher_2.git
+      ref: dev
+  chat_bottom_container:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/flutter_chat_packages.git
+      path: packages/chat_bottom_container
+      ref: dev
+  extended_nested_scroll_view:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/extended_nested_scroll_view.git
+      ref: dev
+  flutter_html:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/flutter_html.git
+      ref: dev
+  flutter_smart_dialog:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/flutter_smart_dialog.git
+      ref: main
+  flutter_sortable_wrap:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/flutter_sortable_wrap.git
+      ref: master
+  font_awesome_flutter:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/font_awesome_flutter.git
+      ref: v10.9.0
+  get:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/getx.git
+      ref: dev
+  material_design_icons_flutter:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/material_design_icons_flutter.git
+      ref: const
+  native_device_orientation:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/flutter_native_device_orientation.git
+      ref: master
+  super_sliver_list:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/super_sliver_list.git
+      ref: mod
+  window_manager:
+    git:
+      url: https://github.com/bggRGjQaUbCoE/window_manager.git
+      path: packages/window_manager
+      ref: main
+  webdav_client:
+    git:
+      url: https://github.com/wgh136/webdav_client.git
+      ref: main
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,8 @@
-import 'package:PiliPlus/http/live.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models_new/live/live_follow/data.dart';
-import 'package:PiliPlus/models_new/live/live_follow/item.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
+import 'package:api/http/live.dart';
+import 'package:core/loading_state.dart';
+import 'package:models/models_new/live/live_follow/data.dart';
+import 'package:models/models_new/live/live_follow/item.dart';
+import 'package:core/controller/common_list_controller.dart';
 import 'package:get/get.dart';
 
 class LiveFollowController

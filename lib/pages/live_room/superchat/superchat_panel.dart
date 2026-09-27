@@ -1,6 +1,6 @@
 import 'package:PiliPlus/common/widgets/scroll_physics.dart'
     show platformClampingPhysics;
-import 'package:PiliPlus/models/common/super_chat_type.dart';
+import 'package:models/models/common/super_chat_type.dart';
 import 'package:PiliPlus/pages/live_room/controller.dart';
 import 'package:PiliPlus/pages/live_room/superchat/superchat_card.dart';
 import 'package:PiliPlus/pages/search/controller.dart';

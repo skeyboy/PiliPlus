@@ -1,10 +1,10 @@
-import 'package:PiliPlus/http/dynamics.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/model_owner.dart';
-import 'package:PiliPlus/models_new/article/article_list/article.dart';
-import 'package:PiliPlus/models_new/article/article_list/data.dart';
-import 'package:PiliPlus/models_new/article/article_list/list.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
+import 'package:api/http/dynamics.dart';
+import 'package:core/loading_state.dart';
+import 'package:models/models/model_owner.dart';
+import 'package:models/models_new/article/article_list/article.dart';
+import 'package:models/models_new/article/article_list/data.dart';
+import 'package:models/models_new/article/article_list/list.dart';
+import 'package:core/controller/common_list_controller.dart';
 import 'package:get/get.dart';
 
 class ArticleListController

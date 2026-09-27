@@ -1,8 +1,8 @@
 import 'package:PiliPlus/common/style.dart';
 import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
 import 'package:PiliPlus/common/widgets/stat/stat.dart';
-import 'package:PiliPlus/models/common/stat_type.dart';
-import 'package:PiliPlus/models_new/article/article_list/article.dart';
+import 'package:models/models/common/stat_type.dart';
+import 'package:models/models_new/article/article_list/article.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

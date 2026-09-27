@@ -3,7 +3,7 @@ import 'package:PiliPlus/common/widgets/scroll_physics.dart' show tabBarView;
 import 'package:PiliPlus/common/widgets/view_safe_area.dart';
 import 'package:PiliPlus/pages/live_search/child/view.dart';
 import 'package:PiliPlus/pages/live_search/controller.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:core/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -1,4 +1,4 @@
-import 'package:PiliPlus/models/dynamics/result.dart';
+import 'package:models/models/dynamics/result.dart';
 import 'package:PiliPlus/pages/dynamics/widgets/additional_panel.dart';
 import 'package:PiliPlus/pages/dynamics/widgets/blocked_item.dart';
 import 'package:PiliPlus/pages/dynamics/widgets/content_panel.dart';

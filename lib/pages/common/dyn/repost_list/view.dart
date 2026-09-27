@@ -3,8 +3,8 @@ import 'package:PiliPlus/common/widgets/loading_widget/http_error.dart';
 import 'package:PiliPlus/common/widgets/loading_widget/loading_widget.dart';
 import 'package:PiliPlus/common/widgets/scroll_physics.dart'
     show platformAlwaysClampingPhysics;
-import 'package:PiliPlus/grpc/bilibili/app/dynamic/v2.pb.dart' show DynamicItem;
-import 'package:PiliPlus/http/loading_state.dart';
+import 'package:grpc/bilibili/app/dynamic/v2.pb.dart' show DynamicItem;
+import 'package:core/loading_state.dart';
 import 'package:PiliPlus/pages/common/dyn/common_dyn_page.dart';
 import 'package:PiliPlus/pages/common/dyn/repost_list/controller.dart';
 import 'package:PiliPlus/pages/common/dyn/repost_list/widgets/item.dart';

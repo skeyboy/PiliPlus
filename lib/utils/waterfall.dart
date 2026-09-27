@@ -2,7 +2,7 @@ import 'package:PiliPlus/common/skeleton/dynamic_card.dart';
 import 'package:PiliPlus/common/sliver_single_child_delegate.dart';
 import 'package:PiliPlus/common/style.dart';
 import 'package:PiliPlus/common/widgets/sliver/sliver_constrained_cross_axis.dart';
-import 'package:PiliPlus/utils/global_data.dart';
+import 'package:core/global_data.dart';
 import 'package:PiliPlus/utils/grid.dart';
 import 'package:flutter/rendering.dart' show SliverConstraints;
 import 'package:material_ui/material_ui.dart';

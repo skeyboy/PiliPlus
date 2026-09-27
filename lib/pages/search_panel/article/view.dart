@@ -1,5 +1,5 @@
 import 'package:PiliPlus/common/widgets/sliver/sliver_floating_header.dart';
-import 'package:PiliPlus/models/search/result.dart';
+import 'package:models/models/search/result.dart';
 import 'package:PiliPlus/pages/search_panel/article/controller.dart';
 import 'package:PiliPlus/pages/search_panel/article/widgets/item.dart';
 import 'package:PiliPlus/pages/search_panel/view.dart';

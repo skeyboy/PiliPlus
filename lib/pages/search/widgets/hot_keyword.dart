@@ -1,6 +1,6 @@
 import 'package:PiliPlus/common/assets.dart';
-import 'package:PiliPlus/models_new/search/search_trending/list.dart';
-import 'package:PiliPlus/utils/extension/string_ext.dart';
+import 'package:models/models_new/search/search_trending/list.dart';
+import 'package:core/extension/string_ext.dart';
 import 'package:PiliPlus/utils/image_utils.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:flutter/rendering.dart'

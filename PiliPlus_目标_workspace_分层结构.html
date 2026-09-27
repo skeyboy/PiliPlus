@@ -1,0 +1,61 @@
+<svg width="100%" viewBox="0 0 680 470" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>拆分后的 pub workspace 分层包结构</title>
+<desc>自下而上六层：pili_grpc 与 pili_core 为 L0，pili_models 与 pili_pref 为数据层，pili_api 为网络层，pili_ui、pili_player、pili_services 为组件与服务层，最上层 app 承载页面。</desc>
+
+<text x="62" y="66" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#888780">L0</text>
+<g>
+<rect x="94" y="40" width="330" height="52" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="112" y="60" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">pili_grpc</text>
+<text x="112" y="78" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#5F5E5A">248k 行 · protobuf 生成代码</text>
+</g>
+<g>
+<rect x="434" y="40" width="206" height="52" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="452" y="60" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">pili_core</text>
+<text x="452" y="78" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#5F5E5A">8k 行 · 纯工具与扩展</text>
+</g>
+
+<text x="62" y="136" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#888780">L1</text>
+<g>
+<rect x="94" y="110" width="546" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="112" y="130" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#0C447C">pili_models</text>
+<text x="112" y="148" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#185FA5">16k 行 · models + models_new，枚举与页面解绑</text>
+</g>
+
+<text x="62" y="206" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#888780">L2</text>
+<g>
+<rect x="94" y="180" width="546" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="112" y="200" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#0C447C">pili_pref</text>
+<text x="112" y="218" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#185FA5">设置中心 · 22 个偏好枚举，依赖 models</text>
+</g>
+
+<text x="62" y="276" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#888780">L3</text>
+<g>
+<rect x="94" y="250" width="546" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="112" y="270" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#0C447C">pili_api</text>
+<text x="112" y="288" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#185FA5">9.4k 行 · http 请求 + grpc 业务封装合并</text>
+</g>
+
+<text x="62" y="346" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#888780">L4</text>
+<g>
+<rect x="94" y="320" width="172" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="112" y="340" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#085041">pili_ui</text>
+<text x="112" y="358" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#0F6E56">48k 行 · 通用组件</text>
+</g>
+<g>
+<rect x="276" y="320" width="172" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="294" y="340" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#085041">pili_player</text>
+<text x="294" y="358" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#0F6E56">6k 行 · 播放器内核</text>
+</g>
+<g>
+<rect x="458" y="320" width="182" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="476" y="340" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#085041">pili_services</text>
+<text x="476" y="358" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#0F6E56">1.7k 行 · 账户与下载</text>
+</g>
+
+<text x="62" y="416" text-anchor="middle" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#888780">L5</text>
+<g>
+<rect x="94" y="390" width="546" height="52" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="112" y="410" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">app</text>
+<text x="112" y="428" text-anchor="start" dominant-baseline="central" font-family="system-ui,sans-serif" font-size="12" fill="#5F5E5A">93k 行 · pages + router + main，仅剩单向依赖</text>
+</g>
+</svg>

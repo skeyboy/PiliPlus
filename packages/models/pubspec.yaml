@@ -1,0 +1,22 @@
+name: models
+resolution: workspace
+description: B 站数据模型层（models / models_new / 偏好枚举 / 播放器枚举）。
+publish_to: none
+version: 0.1.0
+environment:
+  sdk: ">=3.13.0"
+
+# 版本策略集中在根 pubspec.yaml 的 dependency_overrides，成员包一律写 any。
+dependencies:
+  fixnum: any
+  flutter:
+    sdk: flutter
+  get: any
+  hive_ce: any
+  material_design_icons_flutter: any
+  material_ui: any
+
+  core:
+    path: ../core
+  grpc:
+    path: ../grpc

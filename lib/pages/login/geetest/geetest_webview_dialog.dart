@@ -1,7 +1,7 @@
 import 'dart:convert' show jsonDecode;
 import 'dart:io' show Platform;
 
-import 'package:PiliPlus/http/browser_ua.dart';
+import 'package:api/http/browser_ua.dart';
 import 'package:PiliPlus/main.dart';
 import 'package:PiliPlus/plugin/linux_webview.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';

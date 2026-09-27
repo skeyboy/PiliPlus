@@ -1,7 +1,7 @@
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/member.dart';
-import 'package:PiliPlus/models_new/follow/data.dart';
-import 'package:PiliPlus/models_new/follow/list.dart';
+import 'package:core/loading_state.dart';
+import 'package:api/http/member.dart';
+import 'package:models/models_new/follow/data.dart';
+import 'package:models/models_new/follow/list.dart';
 import 'package:PiliPlus/pages/common/search/common_search_controller.dart';
 
 class FollowSearchController

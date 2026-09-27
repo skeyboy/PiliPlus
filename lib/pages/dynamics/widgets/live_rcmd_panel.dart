@@ -2,9 +2,9 @@ import 'package:PiliPlus/common/assets.dart';
 import 'package:PiliPlus/common/style.dart';
 import 'package:PiliPlus/common/widgets/badge.dart';
 import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/models/dynamics/result.dart';
-import 'package:PiliPlus/utils/extension/num_ext.dart';
+import 'package:models/models/common/badge_type.dart';
+import 'package:models/models/dynamics/result.dart';
+import 'package:core/extension/num_ext.dart';
 import 'package:material_ui/material_ui.dart';
 
 Widget liveRcmdPanel(

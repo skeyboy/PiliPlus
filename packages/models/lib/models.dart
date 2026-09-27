@@ -1,0 +1,104 @@
+/// 数据模型层常用入口。
+///
+/// `models/**`（含偏好枚举与播放器枚举）在此统一导出；存在同名类故用 hide 消歧：
+/// `Stat`(model_video / dynamics/result)、`Music` `Ugc`(result / article_content_model)、
+/// `SourceType`(video/source_type / image_preview_type)。
+///
+/// `models_new/**` 是生成的 POJO 树，同名类（`Data` 等）极多，全量导出必然冲突，
+/// 约定**按路径导入**，与 packages/grpc 保持一致。
+library;
+
+export 'danmaku_model.dart';
+export 'models/common/account_type.dart';
+export 'models/common/audio_normalization.dart';
+export 'models/common/avatar_badge_type.dart';
+export 'models/common/badge_type.dart';
+export 'models/common/bar_hide_type.dart';
+export 'models/common/dm_block_type.dart';
+export 'models/common/dynamic/dynamic_badge_mode.dart';
+export 'models/common/dynamic/dynamics_type.dart';
+export 'models/common/dynamic/up_panel_position.dart';
+export 'models/common/enum_with_label.dart';
+export 'models/common/episode_panel_type.dart';
+export 'models/common/fav_order_type.dart';
+export 'models/common/fav_type.dart';
+export 'models/common/follow_order_type.dart';
+export 'models/common/home_tab_type.dart';
+export 'models/common/image_preview_type.dart' hide SourceType;
+export 'models/common/image_type.dart';
+export 'models/common/later_view_type.dart';
+export 'models/common/live/live_contribution_rank_type.dart';
+export 'models/common/live/live_dm_silent_type.dart';
+export 'models/common/live/live_search_type.dart';
+export 'models/common/member/archive_order_type_app.dart';
+export 'models/common/member/archive_order_type_web.dart';
+export 'models/common/member/archive_sort_type_app.dart';
+export 'models/common/member/contribute_type.dart';
+export 'models/common/member/profile_type.dart';
+export 'models/common/member/search_type.dart';
+export 'models/common/member/tab_type.dart';
+export 'models/common/member/user_info_type.dart';
+export 'models/common/member/web_ss_type.dart';
+export 'models/common/msg/msg_type.dart';
+export 'models/common/msg/msg_unread_type.dart';
+export 'models/common/nav_bar_config.dart';
+export 'models/common/pgc_review_type.dart';
+export 'models/common/publish_panel_type.dart';
+export 'models/common/rank_type.dart';
+export 'models/common/reply/reply_option_type.dart';
+export 'models/common/reply/reply_search_type.dart';
+export 'models/common/reply/reply_sort_type.dart';
+export 'models/common/reply/reply_type.dart';
+export 'models/common/search/article_search_type.dart';
+export 'models/common/search/search_type.dart';
+export 'models/common/search/user_search_type.dart';
+export 'models/common/search/video_search_type.dart';
+export 'models/common/setting_type.dart';
+export 'models/common/sponsor_block/action_type.dart';
+export 'models/common/sponsor_block/post_segment_model.dart';
+export 'models/common/sponsor_block/segment_model.dart';
+export 'models/common/sponsor_block/segment_type.dart';
+export 'models/common/sponsor_block/skip_type.dart';
+export 'models/common/stat_type.dart';
+export 'models/common/super_chat_type.dart';
+export 'models/common/super_resolution_type.dart';
+export 'models/common/theme/theme_color_type.dart';
+export 'models/common/theme/theme_type.dart';
+export 'models/common/video/audio_quality.dart';
+export 'models/common/video/cdn_type.dart';
+export 'models/common/video/live_quality.dart';
+export 'models/common/video/source_type.dart';
+export 'models/common/video/subtitle_pref_type.dart';
+export 'models/common/video/video_decode_type.dart';
+export 'models/common/video/video_quality.dart';
+export 'models/common/video/video_type.dart';
+export 'models/common/webview_menu_type.dart';
+export 'models/dynamics/article_content_model.dart' hide Music, Ugc;
+export 'models/dynamics/result.dart' hide Stat;
+export 'models/dynamics/up.dart';
+export 'models/dynamics/vote_model.dart';
+export 'models/home/rcmd/result.dart';
+export 'models/horizontal_video_model.dart';
+export 'models/login/model.dart';
+export 'models/member/info.dart';
+export 'models/member/tags.dart';
+export 'models/model_avatar.dart';
+export 'models/model_hot_video_item.dart';
+export 'models/model_owner.dart';
+export 'models/model_rec_video_item.dart';
+export 'models/model_video.dart';
+export 'models/pgc_lcf.dart';
+export 'models/search/result.dart';
+export 'models/search/search_esports.dart';
+export 'models/search/suggest.dart';
+export 'models/user/danmaku_block.dart';
+export 'models/user/danmaku_rule.dart';
+export 'models/user/danmaku_rule_adapter.dart';
+export 'models/user/info.dart';
+export 'models/user/stat.dart';
+export 'models/video/play/url.dart';
+export 'player/audio_output_type.dart';
+export 'player/bottom_progress_behavior.dart';
+export 'player/fullscreen_mode.dart';
+export 'player/hwdec_type.dart';
+export 'player/play_repeat.dart';

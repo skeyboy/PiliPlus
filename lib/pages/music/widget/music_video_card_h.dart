@@ -4,14 +4,14 @@ import 'package:PiliPlus/common/widgets/image/image_save.dart';
 import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
 import 'package:PiliPlus/common/widgets/marquee.dart';
 import 'package:PiliPlus/common/widgets/stat/stat.dart';
-import 'package:PiliPlus/http/search.dart';
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/models/common/stat_type.dart';
-import 'package:PiliPlus/models_new/music/bgm_recommend_list.dart';
-import 'package:PiliPlus/models_new/video/video_detail/dimension.dart';
-import 'package:PiliPlus/utils/duration_utils.dart';
+import 'package:api/http/search.dart';
+import 'package:models/models/common/badge_type.dart';
+import 'package:models/models/common/stat_type.dart';
+import 'package:models/models_new/music/bgm_recommend_list.dart';
+import 'package:models/models_new/video/video_detail/dimension.dart';
+import 'package:core/duration_utils.dart';
 import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/platform_utils.dart';
+import 'package:core/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MusicVideoCardH extends StatelessWidget {

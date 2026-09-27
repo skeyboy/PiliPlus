@@ -1,8 +1,8 @@
-import 'package:PiliPlus/grpc/bilibili/app/dynamic/v2.pb.dart'
+import 'package:grpc/bilibili/app/dynamic/v2.pb.dart'
     show RepostListRsp, DynamicItem;
-import 'package:PiliPlus/grpc/dyn.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
+import 'package:api/grpc/dyn.dart';
+import 'package:core/loading_state.dart';
+import 'package:core/controller/common_list_controller.dart';
 import 'package:get/get.dart';
 
 class DynRepostController

@@ -1,0 +1,35 @@
+name: core
+resolution: workspace
+description: 基础设施层 —— 纯工具与扩展、存储键、controller 基类、主题常量（零业务依赖）。
+publish_to: none
+version: 0.1.0
+environment:
+  sdk: ">=3.13.0"
+
+# 版本策略集中在根 pubspec.yaml 的 dependency_overrides，成员包一律写 any。
+# 依赖清单由搬入本包的源文件实际 import 扫描得出。
+dependencies:
+  flutter:
+    sdk: flutter
+  grpc: any
+
+  canvas_danmaku: any
+  catcher_2: any
+  collection: any
+  connectivity_plus: any
+  device_info_plus: any
+  easy_debounce: any
+  extended_nested_scroll_view: any
+  file_picker: any
+  flex_seed_scheme: any
+  flutter_smart_dialog: any
+  get: any
+  hive_ce: any
+  intl: any
+  jni: any
+  material_color_utilities: any
+  material_ui: any
+  path: any
+  permission_handler_platform_interface: any
+  share_plus: any
+  uuid: any

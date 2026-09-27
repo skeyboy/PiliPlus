@@ -1,0 +1,40 @@
+name: api
+resolution: workspace
+description: 网络层 —— HTTP 接口封装、grpc 业务请求、账号体系与签名工具。
+publish_to: none
+version: 0.1.0
+environment:
+  sdk: ">=3.13.0"
+
+# 版本策略集中在根 pubspec.yaml 的 dependency_overrides，成员包一律写 any。
+# 依赖清单由搬入本包的源文件实际 import 扫描得出。
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core:
+    path: ../core
+  grpc:
+    path: ../grpc
+  models:
+    path: ../models
+  pref:
+    path: ../pref
+
+  archive: any
+  brotli: any
+  collection: any
+  connectivity_plus: any
+  cookie_jar: any
+  crypto: any
+  dio: any
+  dio_http2_adapter: any
+  encrypt: any
+  fixnum: any
+  flutter_inappwebview: any
+  flutter_smart_dialog: any
+  hive_ce: any
+  http2: any
+  material_ui: any
+  protobuf: any
+  uuid: any

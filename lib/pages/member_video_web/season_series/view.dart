@@ -1,7 +1,7 @@
-import 'package:PiliPlus/models/common/member/archive_sort_type_app.dart';
-import 'package:PiliPlus/models/common/member/web_ss_type.dart';
-import 'package:PiliPlus/models_new/member/season_web/archive.dart';
-import 'package:PiliPlus/models_new/member/season_web/data.dart';
+import 'package:models/models/common/member/archive_sort_type_app.dart';
+import 'package:models/models/common/member/web_ss_type.dart';
+import 'package:models/models_new/member/season_web/archive.dart';
+import 'package:models/models_new/member/season_web/data.dart';
 import 'package:PiliPlus/pages/member_video_web/base/view.dart';
 import 'package:PiliPlus/pages/member_video_web/season_series/controller.dart';
 import 'package:get/get.dart';

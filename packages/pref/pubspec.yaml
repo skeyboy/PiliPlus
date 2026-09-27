@@ -1,0 +1,34 @@
+name: pref
+resolution: workspace
+description: 设置中心 —— Pref 偏好项读写、Hive 存储盒子、视频/字幕/推荐过滤等偏好派生工具。
+publish_to: none
+version: 0.1.0
+environment:
+  sdk: ">=3.13.0"
+
+# 版本策略集中在根 pubspec.yaml 的 dependency_overrides，成员包一律写 any。
+# 依赖清单由搬入本包的源文件实际 import 扫描得出。
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cached_network_image_ce: any
+  collection: any
+  crypto: any
+  ffi: any
+  file_picker: any
+  flex_seed_scheme: any
+  flutter_smart_dialog: any
+  get: any
+  hive_ce: any
+  jni: any
+  material_ui: any
+  path: any
+  path_provider: any
+  screen_retriever: any
+  win32: any
+
+  core:
+    path: ../core
+  models:
+    path: ../models
